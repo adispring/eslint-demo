@@ -7,8 +7,7 @@
   "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .ts,.js",
-    "debug-lint": "npx eslint ./src/hello.js --debug"
+    "lint": "eslint ./src/ --ext .ts,.js --debug"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
