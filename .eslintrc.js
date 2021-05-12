@@ -1,18 +1,10 @@
 module.exports = {
   env: {
-    browser: true,
     es2021: true,
+    node: false,
   },
-  globals: {
-    wx: 'readonly',
-  },
-  extends: ['eslint:recommended', 'prettier'],
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
+  extends: ['./otherConfigs/config1.js'],
   rules: {
-    'no-unused-vars': ['warn']
-  }
+    'no-console': 2,
+  },
 };
